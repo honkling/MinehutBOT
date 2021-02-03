@@ -173,7 +173,7 @@ export async function censorMessage(msg: Message) {
 
 	const filter = checkString(msg.content);
 	if (!filter) return false;
-	if (filter.rule.whitelist.includes(msg.channel.id)) return false;
+	if (filter.rule.whitelist?.includes(msg.channel.id)) return false;
 
 	const type = filter.rule.type;
 
