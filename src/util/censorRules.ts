@@ -159,6 +159,11 @@ export const CENSOR_RULES = [
 		type: Swear,
 		enabled: true,
 	},
+	{
+		rule: '\\b([A-Za-z0-9]{4,10}\.minehut\.gg)',
+		type: Swear,
+		enabled: true,
+	},
 	{ rule: '\\b(fk(?!dr)( off+)?)', type: Swear, enabled: true },
 	{
 		rule:
